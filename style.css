@@ -1,0 +1,15 @@
+body {
+    text-align: center;
+    font-family: 'Palanquin Dark', sans-serif;
+    background-color: #F8FCDA;
+}
+
+.main-title {
+    font-size: 7em;
+    color: #7C6354;
+}
+
+.subtitle {
+    font-size: 4em;
+    color: #7C6354;
+}
