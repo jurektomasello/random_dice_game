@@ -4,6 +4,10 @@ body {
     background-color: #F8FCDA;
 }
 
+.hidden {
+    display: none;
+}
+
 .main-title {
     font-size: 7em;
     color: #7C6354;
@@ -11,5 +15,13 @@ body {
 
 .subtitle {
     font-size: 4em;
-    color: #7C6354;
+    color: rgb(77, 77, 77);
+}
+
+button {
+    font-family: 'Palanquin Dark', sans-serif;
+    font-size: 2em;
+    border-width: 6px;
+    border-radius: 8px;
+    background-color: white;
 }
