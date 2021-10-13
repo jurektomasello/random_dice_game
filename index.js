@@ -1,14 +1,22 @@
-function diceRoll () {
-    var playerOne = Math.floor(Math.random() * 6)  + 1;
+function diceRoll() {
+    var playerOne = Math.floor(Math.random() * 6) + 1;
     var playerTwo = Math.floor(Math.random() * 6) + 1;
 
     if (playerOne > playerTwo) {
-        console.log("Player one wins!");
+
+        document.getElementById("score" + playerOne).style.display = "inline-block";
+        document.getElementById("scoreRight" + playerTwo).style.display = "inline-block";
+
+        document.getElementById("winner-announcement").innerHTML = "Player One wins!";
+
+    } else if (playerOne === playerTwo) {
+        document.getElementById("winner-announcement").innerHTML = "It's a draw!";
     } else {
-        console.log("Player two wins!");
+        document.getElementById("winner-announcement").innerHTML = "Player Two wins!";
     }
 }
 
-document.getElementsByClassName("roll-button")[0].onclick =  function() {
+document.getElementsByClassName("roll-button")[0].onclick = function () {
     diceRoll();
+
 }
