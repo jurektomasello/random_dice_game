@@ -25,3 +25,19 @@ button {
     border-radius: 8px;
     background-color: white;
 }
+
+.container {
+    display: inline-flex;
+}
+
+.left-dice {
+    margin-left: -40%;
+}
+
+.right-dice {
+    margin-left: 75%;
+}
+
+#winner-announcement {
+    font-size: 4em;
+}
